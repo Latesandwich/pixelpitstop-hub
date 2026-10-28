@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-28T03:48:12Z",
+  "updated": "2026-10-28T04:02:44Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "draft",
+  "stage": "draft 1 (sound fixed)",
   "stage_state": "waiting_for_you",
   "eta": "about 03:30 UTC (10:30 Bangkok)",
   "links": [
@@ -17,6 +17,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-28T04:02:44Z",
+      "who": "orchestrator",
+      "text": "Ep1 draft 1 sound fixed: fuzzy noise whooshes and slides replaced with soft tonal ones, picture unchanged. Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-10-28T03:48:12Z",
       "who": "worker",
