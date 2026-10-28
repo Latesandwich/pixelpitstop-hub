@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Pit Stop Hub</title>
+<link rel="icon" href="avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffc828; --ink: #16121c; --card: #fff8e1; --red: #d6382f; --green: #1f8a4c; --blue: #2838aa; --muted: #6b5d3a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 16px 48px; }
+  header { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; }
+  header img { width: 64px; height: 64px; border: 3px solid var(--ink); border-radius: 50%; image-rendering: pixelated; }
+  h1, h2, .pix { font-family: "Press Start 2P", monospace; letter-spacing: 0; }
+  h1 { font-size: 18px; margin: 0 0 6px; }
+  h2 { font-size: 12px; margin: 0 0 12px; }
+  .sub { font-size: 13px; color: var(--muted); }
+  .card { background: var(--card); border: 3px solid var(--ink); box-shadow: 4px 4px 0 var(--ink); padding: 16px; margin-bottom: 18px; }
+  .state { display: inline-block; font-family: "Press Start 2P", monospace; font-size: 11px; padding: 6px 8px; border: 2px solid var(--ink); background: #fff; }
+  .state.running { background: #bfe6ff; } .state.waiting_for_you { background: #ffe08a; } .state.done { background: #b9f0c9; }
+  .state.failed { background: #ffb3ad; } .state.stopped, .state.paused { background: #ffb3ad; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; margin: 6px 0; }
+  .k { color: var(--muted); min-width: 92px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn { font-family: "Press Start 2P", monospace; font-size: 11px; text-decoration: none; color: #fff; background: var(--blue);
+         border: 3px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); padding: 10px 12px; display: inline-block; }
+  .btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+  .btn.stop { background: var(--red); } .btn.go { background: var(--green); } .btn.alt { background: #fff; color: var(--ink); }
+  .note { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  ul.log { list-style: none; padding: 0; margin: 0; }
+  ul.log li { padding: 8px 0; border-top: 2px dashed #e2cf8f; }
+  ul.log li:first-child { border-top: 0; }
+  .t { font-size: 12px; color: var(--muted); }
+  .who { font-weight: 700; }
+  a { color: var(--blue); }
+  .banner { display: none; background: var(--red); color: #fff; border: 3px solid var(--ink); padding: 10px 12px; margin-bottom: 18px;
+            font-family: "Press Start 2P", monospace; font-size: 11px; line-height: 1.8; }
+  @media (max-width: 480px) { h1 { font-size: 14px; } .btn { font-size: 10px; padding: 9px 10px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="avatar.png" alt="">
+    <div>
+      <h1>Pixel Pit Stop Hub</h1>
+      <div class="sub">Pipeline status and controls. Updated by the cloud agents.</div>
+    </div>
+  </header>
+
+  <div class="banner" id="paused">PIPELINE PAUSED. No agent starts or continues work until you press RESUME.</div>
+
+  <section class="card">
+    <h2>Now</h2>
+    <div class="row"><span class="k">State</span><span class="state" id="state">loading</span></div>
+    <div class="row"><span class="k">Episode</span><span id="episode">-</span></div>
+    <div class="row"><span class="k">Stage</span><span id="stage">-</span></div>
+    <div class="row"><span class="k">Expected</span><span id="eta">-</span></div>
+    <div class="row"><span class="k">Updated</span><span id="updated">-</span></div>
+    <div class="row" id="links"></div>
+  </section>
+
+  <section class="card">
+    <h2>Controls</h2>
+    <div class="btns">
+      <a class="btn stop" id="b-stop">STOP</a>
+      <a class="btn go" id="b-resume">RESUME</a>
+      <a class="btn" id="b-approve">APPROVE</a>
+      <a class="btn alt" id="b-feedback">FEEDBACK</a>
+      <a class="btn alt" id="b-next">NEXT EPISODE</a>
+    </div>
+    <p class="note">Each button opens a command issue in the private repo; press "Submit new issue" to send it. Only the
+      repo owner can open those, so strangers can't control the pipeline. STOP pauses everything within a minute:
+      running renders finish their current chunk, then exit. Hard kill: disable the routines at
+      <a href="https://claude.ai/code/routines">claude.ai/code/routines</a>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Agent reports</h2>
+    <ul class="log" id="log"><li class="t">loading</li></ul>
+  </section>
+</main>
+<script>
+  const REPO = "Latesandwich/channel-character";
+  const issue = (title, body) => "https://github.com/" + REPO + "/issues/new?labels=cmd&title=" +
+    encodeURIComponent(title) + "&body=" + encodeURIComponent(body || "");
+  const fmt = iso => { try { return new Date(iso).toLocaleString(); } catch (e) { return iso; } };
+  const el = id => document.getElementById(id);
+
+  function controls(s) {
+    const ep = s.episode || "";
+    el("b-stop").href = issue("[cmd] stop", "Pause the whole pipeline.");
+    el("b-resume").href = issue("[cmd] resume", "Resume the pipeline.");
+    el("b-approve").href = issue("[cmd] approve " + ep, "Approve the current " + (s.stage || "stage") + " of " + ep + ".");
+    el("b-feedback").href = issue("[cmd] feedback " + ep, "What to fix (one item per line, most important first):\n\n- ");
+    el("b-next").href = issue("[cmd] next", "Produce the next queued episode in SERIES.md.");
+  }
+
+  async function load() {
+    controls({});  // the buttons work even when status.json can't be read
+    let s;
+    try {
+      const r = await fetch("status.json?t=" + Date.now(), { cache: "no-store" });
+      s = await r.json();
+    } catch (e) {
+      el("state").textContent = "status unavailable";
+      return;
+    }
+    const st = s.paused ? "paused" : (s.stage_state || "idle");
+    el("state").textContent = st.replace(/_/g, " ");
+    el("state").className = "state " + st;
+    el("paused").style.display = s.paused ? "block" : "none";
+    el("episode").textContent = s.title ? s.episode + " - " + s.title : (s.episode || "-");
+    el("stage").textContent = s.stage || "-";
+    el("eta").textContent = s.eta || "-";
+    el("updated").textContent = s.updated ? fmt(s.updated) : "-";
+    el("links").innerHTML = "";
+    (s.links || []).forEach(l => {
+      const a = document.createElement("a");
+      a.href = l.url; a.textContent = l.label; a.target = "_blank"; a.rel = "noopener";
+      el("links").appendChild(a);
+    });
+    const log = el("log");
+    log.innerHTML = "";
+    (s.log || []).slice(0, 30).forEach(e => {
+      const li = document.createElement("li");
+      li.innerHTML = '<div class="t"></div><div><span class="who"></span> <span class="txt"></span></div>';
+      li.querySelector(".t").textContent = fmt(e.t);
+      li.querySelector(".who").textContent = e.who + ":";
+      li.querySelector(".txt").textContent = e.text;
+      log.appendChild(li);
+    });
+    if (!log.children.length) log.innerHTML = '<li class="t">No reports yet.</li>';
+    controls(s);
+  }
+  load();
+  setInterval(load, 60000);
+</script>
+</body>
+</html>
