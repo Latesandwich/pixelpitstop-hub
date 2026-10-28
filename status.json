@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T01:40:00Z",
+  "updated": "2026-10-28T01:41:11Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
@@ -8,6 +8,15 @@
   "eta": "about 03:30 UTC (10:30 Bangkok)",
   "links": [],
   "log": [
-    {"t": "2026-10-28T01:40:00Z", "who": "orchestrator", "text": "Hub online. Ep1 draft build started at 01:05 UTC: fresh voice and timing, four broken shots fixed on the mid sheet."}
+    {
+      "t": "2026-10-28T01:41:11Z",
+      "who": "conductor",
+      "text": "resumed"
+    },
+    {
+      "t": "2026-10-28T01:40:00Z",
+      "who": "orchestrator",
+      "text": "Hub online. Ep1 draft build started at 01:05 UTC: fresh voice and timing, four broken shots fixed on the mid sheet."
+    }
   ]
 }
