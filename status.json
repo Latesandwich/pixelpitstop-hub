@@ -1,18 +1,23 @@
 {
-  "updated": "2026-10-28T07:58:12Z",
+  "updated": "2026-10-28T08:05:48Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "final assemble",
-  "stage_state": "running",
+  "stage": "final",
+  "stage_state": "waiting_for_you",
   "eta": "about 30 min",
   "links": [
     {
-      "label": "part 2",
-      "url": "https://github.com/Latesandwich/channel-character/tree/ep01_invention-final-part2/parts"
+      "label": "final mp4",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep01_invention-final/video/ep01_invention/ep01_invention.mp4"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-28T08:05:48Z",
+      "who": "conductor",
+      "text": "final ready: APPROVE to post"
+    },
     {
       "t": "2026-10-28T07:58:12Z",
       "who": "conductor",
