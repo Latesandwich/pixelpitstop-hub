@@ -1,13 +1,27 @@
 {
-  "updated": "2026-10-28T01:41:11Z",
+  "updated": "2026-10-28T03:48:12Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "review draft rendering in the cloud (4 samples, on twos)",
-  "stage_state": "running",
+  "stage": "draft",
+  "stage_state": "waiting_for_you",
   "eta": "about 03:30 UTC (10:30 Bangkok)",
-  "links": [],
+  "links": [
+    {
+      "label": "draft video",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep01-draft/video/ep01_invention/ep01_invention.mp4"
+    },
+    {
+      "label": "contact sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep01-draft/video/ep01_invention/contact_sheet.png"
+    }
+  ],
   "log": [
+    {
+      "t": "2026-10-28T03:48:12Z",
+      "who": "worker",
+      "text": "Ep1 draft 1 ready (54 s). Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-10-28T01:41:11Z",
       "who": "conductor",
