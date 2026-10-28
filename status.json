@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-28T07:32:46Z",
+  "updated": "2026-10-28T07:58:12Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "final render (4 parts)",
+  "stage": "final assemble",
   "stage_state": "running",
-  "eta": "3.5 h",
+  "eta": "about 30 min",
   "links": [
     {
       "label": "part 2",
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-28T07:58:12Z",
+      "who": "conductor",
+      "text": "all 4 final parts done; assembling final"
+    },
     {
       "t": "2026-10-28T07:32:46Z",
       "who": "worker",
