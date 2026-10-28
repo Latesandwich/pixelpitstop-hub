@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-28T04:02:44Z",
+  "updated": "2026-10-28T04:19:05Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "draft 1 (sound fixed)",
-  "stage_state": "waiting_for_you",
-  "eta": "about 03:30 UTC (10:30 Bangkok)",
+  "stage": "final render (4 parts)",
+  "stage_state": "running",
+  "eta": "3.5 h",
   "links": [
     {
       "label": "draft video",
@@ -17,6 +17,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-28T04:19:05Z",
+      "who": "conductor",
+      "text": "approved draft; 4 final-part jobs opened"
+    },
     {
       "t": "2026-10-28T04:02:44Z",
       "who": "orchestrator",
