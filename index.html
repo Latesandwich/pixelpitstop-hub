@@ -40,6 +40,10 @@
   a { color: var(--blue); }
   .banner { display: none; background: var(--red); color: #fff; border: 3px solid var(--ink); padding: 10px 12px; margin-bottom: 18px;
             font-family: "Press Start 2P", monospace; font-size: 11px; line-height: 1.8; }
+  #watch { display: none; }
+  .player { display: block; width: 100%; max-width: 360px; aspect-ratio: 9 / 16; margin: 0 auto; background: var(--ink);
+            border: 3px solid var(--ink); }
+  img.player { aspect-ratio: auto; max-width: 100%; }
   @media (max-width: 480px) { h1 { font-size: 14px; } .btn { font-size: 10px; padding: 9px 10px; } }
 </style>
 </head>
@@ -63,6 +67,12 @@
     <div class="row"><span class="k">Expected</span><span id="eta">-</span></div>
     <div class="row"><span class="k">Updated</span><span id="updated">-</span></div>
     <div class="row" id="links"></div>
+  </section>
+
+  <section class="card" id="watch">
+    <h2>Watch</h2>
+    <div id="player"></div>
+    <p class="note" id="vlabel"></p>
   </section>
 
   <section class="card">
@@ -101,6 +111,32 @@
     el("b-next").href = issue("[cmd] next", "Produce the next queued episode in SERIES.md.");
   }
 
+  let shown = "";
+  function showVideo(v) {
+    const key = v ? (v.src || v.url || "") : "";
+    el("vlabel").textContent = v && v.label ? v.label : "";
+    if (key === shown) return;  // don't restart the player on every refresh
+    shown = key;
+    const box = el("player");
+    box.innerHTML = "";
+    el("watch").style.display = key ? "block" : "none";
+    if (!key) return;
+    const yt = (v.url || "").match(/(?:youtu\.be\/|shorts\/|[?&]v=)([\w-]{11})/);
+    let m;
+    if (v.src && v.kind === "image") {
+      m = document.createElement("img"); m.src = v.src; m.alt = "contact sheet";
+    } else if (v.src) {
+      m = document.createElement("video"); m.src = v.src; m.controls = true; m.playsInline = true; m.preload = "metadata";
+    } else if (yt) {
+      m = document.createElement("iframe"); m.src = "https://www.youtube.com/embed/" + yt[1];
+      m.allow = "encrypted-media; picture-in-picture; fullscreen"; m.title = "video";
+    } else {
+      m = document.createElement("a"); m.href = v.url; m.textContent = "Open the video"; m.target = "_blank"; m.rel = "noopener";
+    }
+    if (m.tagName !== "A") m.className = "player";
+    box.appendChild(m);
+  }
+
   async function load() {
     controls({});  // the buttons work even when status.json can't be read
     let s;
@@ -125,6 +161,7 @@
       a.href = l.url; a.textContent = l.label; a.target = "_blank"; a.rel = "noopener";
       el("links").appendChild(a);
     });
+    showVideo(s.video);
     const log = el("log");
     log.innerHTML = "";
     (s.log || []).slice(0, 30).forEach(e => {
