@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T03:39:58Z",
+  "updated": "2026-10-29T05:30:47Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
@@ -81,5 +81,13 @@
       "who": "orchestrator",
       "text": "Hub online. Ep1 draft build started at 01:05 UTC: fresh voice and timing, four broken shots fixed on the mid sheet."
     }
-  ]
+  ],
+  "previews": [
+    "previews/ep02_everyone_draft_202610290530.mp4"
+  ],
+  "video": {
+    "src": "previews/ep02_everyone_draft_202610290530.mp4",
+    "kind": "video",
+    "label": "Ep1 final (posted)"
+  }
 }
