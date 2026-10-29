@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T15:10:43Z",
+  "updated": "2026-10-29T17:05:10Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
@@ -8,19 +8,16 @@
   "eta": "about 3.5 h",
   "links": [
     {
-      "label": "video",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/ep02_everyone.mp4"
-    },
-    {
-      "label": "sheet",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/contact_sheet.png"
-    },
-    {
-      "label": "notes",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/DRAFT_NOTES.md"
+      "label": "part1",
+      "url": "https://github.com/Latesandwich/channel-character/tree/ep02_everyone-final-part1/parts"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T17:05:10Z",
+      "who": "worker",
+      "text": "ep02_everyone final part 1/4 done (parts on branch ep02_everyone-final-part1); waiting on parts 2-4"
+    },
     {
       "t": "2026-10-29T15:10:43Z",
       "who": "conductor",
