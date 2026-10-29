@@ -1,26 +1,31 @@
 {
-  "updated": "2026-10-29T05:30:47Z",
+  "updated": "2026-10-29T05:33:08Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
   "stage": "draft",
-  "stage_state": "running",
+  "stage_state": "waiting_for_you",
   "eta": "about 3 h",
   "links": [
     {
-      "label": "TikTok",
-      "url": "https://www.tiktok.com/@gummylow/video/7701925198261538056"
+      "label": "video",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/ep02_everyone.mp4"
     },
     {
-      "label": "YouTube",
-      "url": "https://youtube.com/shorts/BOYFa6S_FPY"
+      "label": "sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/contact_sheet.png"
     },
     {
-      "label": "Facebook",
-      "url": "https://www.facebook.com/reel/1867194254695102"
+      "label": "notes",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-draft/video/ep02_everyone/DRAFT_NOTES.md"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T05:33:08Z",
+      "who": "worker",
+      "text": "Ep2 draft 1 ready (46.6 s, 17 shots). watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-10-29T03:39:58Z",
       "who": "conductor",
