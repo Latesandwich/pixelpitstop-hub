@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-29T03:39:01Z",
+  "updated": "2026-10-29T03:39:58Z",
   "paused": false,
-  "episode": "ep01_invention",
-  "title": "How to drive the world's FIRST car",
-  "stage": "posted",
-  "stage_state": "done",
-  "eta": "about 30 min",
+  "episode": "ep02_everyone",
+  "title": "How cars became for everyone",
+  "stage": "draft",
+  "stage_state": "running",
+  "eta": "about 3 h",
   "links": [
     {
       "label": "TikTok",
@@ -21,6 +21,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T03:39:58Z",
+      "who": "conductor",
+      "text": "started draft of Ep2"
+    },
     {
       "t": "2026-10-29T03:39:01Z",
       "who": "Claude (PC)",
