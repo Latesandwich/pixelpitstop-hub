@@ -1,18 +1,23 @@
 {
-  "updated": "2026-10-29T19:10:39Z",
+  "updated": "2026-10-29T19:16:39Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
-  "stage": "final assemble",
-  "stage_state": "running",
+  "stage": "final",
+  "stage_state": "waiting_for_you",
   "eta": "about 3.5 h",
   "links": [
     {
-      "label": "part1",
-      "url": "https://github.com/Latesandwich/channel-character/tree/ep02_everyone-final-part1/parts"
+      "label": "final",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-final/video/ep02_everyone/ep02_everyone.mp4"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T19:16:39Z",
+      "who": "worker",
+      "text": "final assembled (46.6 s). final ready: APPROVE to post"
+    },
     {
       "t": "2026-10-29T19:10:39Z",
       "who": "worker",
@@ -105,12 +110,13 @@
     }
   ],
   "previews": [
+    "previews/ep2_final_202610291916.mp4",
     "previews/ep2_draft_202610290534.mp4",
     "previews/ep02_everyone_draft_202610290530.mp4"
   ],
   "video": {
-    "src": "previews/ep2_draft_202610290534.mp4",
+    "src": "previews/ep2_final_202610291916.mp4",
     "kind": "video",
-    "label": "Ep2 draft"
+    "label": "Ep2 final"
   }
 }
