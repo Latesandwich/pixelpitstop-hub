@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-29T17:05:10Z",
+  "updated": "2026-10-29T17:27:01Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
-  "stage": "final render (4 parts)",
+  "stage": "final parts",
   "stage_state": "running",
   "eta": "about 3.5 h",
   "links": [
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T17:27:01Z",
+      "who": "worker",
+      "text": "part 3/4 done (part 1/4 done earlier); parts 2 and 4 still rendering"
+    },
     {
       "t": "2026-10-29T17:05:10Z",
       "who": "worker",
