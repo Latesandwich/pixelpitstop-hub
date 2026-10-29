@@ -1,18 +1,31 @@
 {
-  "updated": "2026-10-28T08:05:48Z",
+  "updated": "2026-10-29T03:39:01Z",
   "paused": false,
   "episode": "ep01_invention",
   "title": "How to drive the world's FIRST car",
-  "stage": "final",
-  "stage_state": "waiting_for_you",
+  "stage": "posted",
+  "stage_state": "done",
   "eta": "about 30 min",
   "links": [
     {
-      "label": "final mp4",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep01_invention-final/video/ep01_invention/ep01_invention.mp4"
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@gummylow/video/7701925198261538056"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://youtube.com/shorts/BOYFa6S_FPY"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/reel/1867194254695102"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-29T03:39:01Z",
+      "who": "Claude (PC)",
+      "text": "Ep1 posted on TikTok, YouTube and Facebook; opening next episode"
+    },
     {
       "t": "2026-10-28T08:05:48Z",
       "who": "conductor",
