@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T05:33:08Z",
+  "updated": "2026-10-29T05:33:54Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
@@ -88,11 +88,12 @@
     }
   ],
   "previews": [
+    "previews/ep2_draft_202610290534.mp4",
     "previews/ep02_everyone_draft_202610290530.mp4"
   ],
   "video": {
-    "src": "previews/ep02_everyone_draft_202610290530.mp4",
+    "src": "previews/ep2_draft_202610290534.mp4",
     "kind": "video",
-    "label": "Ep1 final (posted)"
+    "label": "Ep2 draft"
   }
 }
