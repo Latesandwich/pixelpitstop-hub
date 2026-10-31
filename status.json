@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-31T08:38:34Z",
+  "updated": "2026-10-31T18:13:13Z",
   "paused": false,
   "episode": "ep03_engine",
   "title": "Ep3: How a car engine works",
-  "stage": "draft",
-  "stage_state": "waiting_for_you",
-  "eta": "about 3 h",
+  "stage": "final render (4 parts)",
+  "stage_state": "running",
+  "eta": "3-4 h",
   "links": [
     {
       "label": "mp4",
@@ -21,6 +21,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T18:13:13Z",
+      "who": "conductor",
+      "text": "approved draft; 4 final-part jobs opened"
+    },
     {
       "t": "2026-10-31T08:38:34Z",
       "who": "worker",
@@ -138,9 +143,5 @@
     "previews/ep2_draft_202610290534.mp4",
     "previews/ep02_everyone_draft_202610290530.mp4"
   ],
-  "video": {
-    "src": "previews/ep3_draft_202610310838.mp4",
-    "kind": "video",
-    "label": "Ep3 draft"
-  }
+  "video": null
 }
