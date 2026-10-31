@@ -1,18 +1,31 @@
 {
-  "updated": "2026-10-31T06:36:25Z",
+  "updated": "2026-10-31T08:38:34Z",
   "paused": false,
   "episode": "ep03_engine",
   "title": "Ep3: How a car engine works",
   "stage": "draft",
-  "stage_state": "running",
+  "stage_state": "waiting_for_you",
   "eta": "about 3 h",
   "links": [
     {
-      "label": "final",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep02_everyone-final/video/ep02_everyone/ep02_everyone.mp4"
+      "label": "mp4",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep03_engine-draft/video/ep03_engine/ep03_engine.mp4"
+    },
+    {
+      "label": "contact sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep03_engine-draft/video/ep03_engine/contact_sheet.png"
+    },
+    {
+      "label": "notes",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep03_engine-draft/video/ep03_engine/DRAFT_NOTES.md"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T08:38:34Z",
+      "who": "worker",
+      "text": "Ep3 draft built, 58.5 s, 19 shots, 4 samples on twos. Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-10-31T06:36:25Z",
       "who": "conductor",
@@ -120,13 +133,14 @@
     }
   ],
   "previews": [
+    "previews/ep3_draft_202610310838.mp4",
     "previews/ep2_final_202610291916.mp4",
     "previews/ep2_draft_202610290534.mp4",
     "previews/ep02_everyone_draft_202610290530.mp4"
   ],
   "video": {
-    "src": "previews/ep2_final_202610291916.mp4",
+    "src": "previews/ep3_draft_202610310838.mp4",
     "kind": "video",
-    "label": "Ep2 final"
+    "label": "Ep3 draft"
   }
 }
