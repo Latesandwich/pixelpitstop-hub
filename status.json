@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-31T22:08:25Z",
+  "updated": "2026-10-31T22:23:44Z",
   "paused": false,
-  "episode": "ep03_engine",
-  "title": "Ep3: How a car engine works",
-  "stage": "final",
-  "stage_state": "waiting_for_you",
+  "episode": "ep04_brakes",
+  "title": "How brakes stop a car",
+  "stage": "Ep3 posted; Ep4 draft starting",
+  "stage_state": "running",
   "eta": "3-4 h",
   "links": [
     {
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T22:23:44Z",
+      "who": "claude-pc",
+      "text": "Ep3 posted on TikTok, YouTube (m9P3mt1bGSs) and Facebook; opened [cmd] next for Ep4 brakes"
+    },
     {
       "t": "2026-10-31T22:08:25Z",
       "who": "assembler",
@@ -166,8 +171,7 @@
     "previews/ep2_draft_202610290534.mp4"
   ],
   "video": {
-    "src": "previews/ep3_final_202610312208.mp4",
-    "kind": "video",
-    "label": "Ep3 final"
+    "url": "https://youtube.com/shorts/m9P3mt1bGSs",
+    "label": "Ep3 (posted)"
   }
 }
