@@ -1,18 +1,31 @@
 {
-  "updated": "2026-10-31T22:24:17Z",
+  "updated": "2026-10-31T23:42:21Z",
   "paused": false,
   "episode": "ep04_brakes",
-  "title": "How brakes stop a car",
+  "title": "Ep4 How brakes stop a car",
   "stage": "draft",
-  "stage_state": "running",
+  "stage_state": "waiting_for_you",
   "eta": "about 3 h",
   "links": [
     {
-      "label": "final",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep03_engine-final/video/ep03_engine/ep03_engine.mp4"
+      "label": "video",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/ep04_brakes.mp4"
+    },
+    {
+      "label": "sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/contact_sheet.png"
+    },
+    {
+      "label": "notes",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/DRAFT_NOTES.md"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T23:42:21Z",
+      "who": "worker",
+      "text": "Ep4 draft done (48 s, Bertha photo card, EP4 + PRO FACT badges). Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-10-31T22:24:17Z",
       "who": "conductor",
@@ -157,21 +170,17 @@
       "t": "2026-10-28T03:48:12Z",
       "who": "worker",
       "text": "Ep1 draft 1 ready (54 s). Watch it, then APPROVE or FEEDBACK"
-    },
-    {
-      "t": "2026-10-28T01:41:11Z",
-      "who": "conductor",
-      "text": "resumed"
     }
   ],
   "previews": [
+    "previews/ep4_draft_202610312342.mp4",
     "previews/ep3_final_202610312208.mp4",
     "previews/ep3_draft_202610310838.mp4",
-    "previews/ep2_final_202610291916.mp4",
-    "previews/ep2_draft_202610290534.mp4"
+    "previews/ep2_final_202610291916.mp4"
   ],
   "video": {
-    "url": "https://youtube.com/shorts/m9P3mt1bGSs",
-    "label": "Ep3 (posted)"
+    "src": "previews/ep4_draft_202610312342.mp4",
+    "kind": "video",
+    "label": "Ep4 draft"
   }
 }
