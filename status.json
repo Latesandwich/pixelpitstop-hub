@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-31T06:35:32Z",
+  "updated": "2026-10-31T06:36:25Z",
   "paused": false,
-  "episode": "ep02_everyone",
-  "title": "How cars became for everyone",
-  "stage": "posted",
-  "stage_state": "done",
-  "eta": "",
+  "episode": "ep03_engine",
+  "title": "Ep3: How a car engine works",
+  "stage": "draft",
+  "stage_state": "running",
+  "eta": "about 3 h",
   "links": [
     {
       "label": "final",
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T06:36:25Z",
+      "who": "conductor",
+      "text": "opened draft job for Ep3"
+    },
     {
       "t": "2026-10-31T06:35:32Z",
       "who": "Claude (PC)",
