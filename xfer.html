@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>xfer</title>
+<!-- Hands one of this site's own videos to the page that frames it (Claude on the PC uses it to upload a post
+     without pushing the file through the browser extension). Only files under previews/ or xfer/. -->
+<script>
+  const src = new URLSearchParams(location.search).get("src") || "";
+  const send = m => parent.postMessage(Object.assign({ pps: true }, m), "*");
+  if (!/^(previews|xfer)\/[\w.-]+\.mp4$/.test(src)) send({ error: "bad src" });
+  else fetch(src).then(r => r.ok ? r.blob() : Promise.reject(r.status))
+    .then(b => send({ name: src.split("/").pop(), blob: b }), e => send({ error: String(e) }));
+</script>
