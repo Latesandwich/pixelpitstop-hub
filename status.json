@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-31T22:02:38Z",
+  "updated": "2026-10-31T22:02:42Z",
   "paused": false,
   "episode": "ep03_engine",
   "title": "Ep3: How a car engine works",
-  "stage": "final render (4 parts)",
+  "stage": "final assemble",
   "stage_state": "running",
   "eta": "3-4 h",
   "links": [
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T22:02:42Z",
+      "who": "conductor",
+      "text": "all 4 parts done, assembling final"
+    },
     {
       "t": "2026-10-31T22:02:38Z",
       "who": "worker",
