@@ -1,18 +1,23 @@
 {
-  "updated": "2026-10-31T22:02:42Z",
+  "updated": "2026-10-31T22:08:25Z",
   "paused": false,
   "episode": "ep03_engine",
   "title": "Ep3: How a car engine works",
-  "stage": "final assemble",
-  "stage_state": "running",
+  "stage": "final",
+  "stage_state": "waiting_for_you",
   "eta": "3-4 h",
   "links": [
     {
-      "label": "part 1",
-      "url": "https://github.com/Latesandwich/channel-character/tree/ep03_engine-final-part1/parts"
+      "label": "final",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep03_engine-final/video/ep03_engine/ep03_engine.mp4"
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T22:08:25Z",
+      "who": "assembler",
+      "text": "final mp4 ready (58.5 s, 1756 frames). final ready: APPROVE to post"
+    },
     {
       "t": "2026-10-31T22:02:42Z",
       "who": "conductor",
@@ -155,10 +160,14 @@
     }
   ],
   "previews": [
+    "previews/ep3_final_202610312208.mp4",
     "previews/ep3_draft_202610310838.mp4",
     "previews/ep2_final_202610291916.mp4",
-    "previews/ep2_draft_202610290534.mp4",
-    "previews/ep02_everyone_draft_202610290530.mp4"
+    "previews/ep2_draft_202610290534.mp4"
   ],
-  "video": null
+  "video": {
+    "src": "previews/ep3_final_202610312208.mp4",
+    "kind": "video",
+    "label": "Ep3 final"
+  }
 }
