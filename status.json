@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-29T19:16:39Z",
+  "updated": "2026-10-31T06:35:32Z",
   "paused": false,
   "episode": "ep02_everyone",
   "title": "How cars became for everyone",
-  "stage": "final",
-  "stage_state": "waiting_for_you",
-  "eta": "about 3.5 h",
+  "stage": "posted",
+  "stage_state": "done",
+  "eta": "",
   "links": [
     {
       "label": "final",
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T06:35:32Z",
+      "who": "Claude (PC)",
+      "text": "Ep2 posted on TikTok, YouTube and Facebook; opening Ep3"
+    },
     {
       "t": "2026-10-29T19:16:39Z",
       "who": "worker",
