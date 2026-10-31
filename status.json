@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-31T22:23:44Z",
+  "updated": "2026-10-31T22:24:17Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "How brakes stop a car",
-  "stage": "Ep3 posted; Ep4 draft starting",
+  "stage": "draft",
   "stage_state": "running",
-  "eta": "3-4 h",
+  "eta": "about 3 h",
   "links": [
     {
       "label": "final",
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-10-31T22:24:17Z",
+      "who": "conductor",
+      "text": "drafting Ep4 brakes"
+    },
     {
       "t": "2026-10-31T22:23:44Z",
       "who": "claude-pc",
@@ -157,11 +162,6 @@
       "t": "2026-10-28T01:41:11Z",
       "who": "conductor",
       "text": "resumed"
-    },
-    {
-      "t": "2026-10-28T01:40:00Z",
-      "who": "orchestrator",
-      "text": "Hub online. Ep1 draft build started at 01:05 UTC: fresh voice and timing, four broken shots fixed on the mid sheet."
     }
   ],
   "previews": [
