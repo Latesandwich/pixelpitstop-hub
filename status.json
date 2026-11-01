@@ -1,26 +1,23 @@
 {
-  "updated": "2026-11-01T03:12:16Z",
+  "updated": "2026-11-01T03:22:22Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4: How brakes stop a car",
-  "stage": "fix round 1",
-  "stage_state": "running",
+  "stage": "fix preview",
+  "stage_state": "waiting_for_you",
   "eta": "~1 h",
   "links": [
     {
-      "label": "video",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/ep04_brakes.mp4"
-    },
-    {
       "label": "sheet",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/contact_sheet.png"
-    },
-    {
-      "label": "notes",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/DRAFT_NOTES.md"
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/fix1/sheet.png"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T03:22:22Z",
+      "who": "fixer",
+      "text": "fix 1 preview done (disc spin readable, character back in shots 16/18/19, whirr SFX). Look at the stills, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-11-01T03:12:16Z",
       "who": "conductor",
@@ -165,22 +162,17 @@
       "t": "2026-10-28T04:19:05Z",
       "who": "conductor",
       "text": "approved draft; 4 final-part jobs opened"
-    },
-    {
-      "t": "2026-10-28T04:02:44Z",
-      "who": "orchestrator",
-      "text": "Ep1 draft 1 sound fixed: fuzzy noise whooshes and slides replaced with soft tonal ones, picture unchanged. Watch it, then APPROVE or FEEDBACK"
     }
   ],
   "previews": [
+    "previews/ep4_fix_1_stills_202611010322.jpg",
     "previews/ep4_draft_202610312342.mp4",
     "previews/ep3_final_202610312208.mp4",
-    "previews/ep3_draft_202610310838.mp4",
-    "previews/ep2_final_202610291916.mp4"
+    "previews/ep3_draft_202610310838.mp4"
   ],
   "video": {
-    "src": "previews/ep4_draft_202610312342.mp4",
-    "kind": "video",
-    "label": "Ep4 draft"
+    "src": "previews/ep4_fix_1_stills_202611010322.jpg",
+    "kind": "image",
+    "label": "Ep4 fix 1 stills"
   }
 }
