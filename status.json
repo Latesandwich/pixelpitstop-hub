@@ -1,18 +1,23 @@
 {
-  "updated": "2026-11-01T08:21:55Z",
+  "updated": "2026-11-01T08:29:29Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
   "stage": "final",
-  "stage_state": "failed",
+  "stage_state": "waiting_for_you",
   "eta": "1 h",
   "links": [
     {
-      "label": "part4 branch",
-      "url": "https://github.com/Latesandwich/channel-character/tree/ep04_brakes-final-part4"
+      "label": "final mp4",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-final/video/ep04_brakes/ep04_brakes.mp4"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T08:29:29Z",
+      "who": "worker",
+      "text": "final assembled (48.1 s, 1080x1920). final ready: APPROVE to post"
+    },
     {
       "t": "2026-11-01T08:21:55Z",
       "who": "worker",
@@ -157,22 +162,17 @@
       "t": "2026-10-29T17:05:10Z",
       "who": "worker",
       "text": "ep02_everyone final part 1/4 done (parts on branch ep02_everyone-final-part1); waiting on parts 2-4"
-    },
-    {
-      "t": "2026-10-29T15:10:43Z",
-      "who": "conductor",
-      "text": "approved draft; 4 final-part jobs opened"
     }
   ],
   "previews": [
+    "previews/ep4_final_202611010829.mp4",
     "previews/ep4_draft_202611010350.mp4",
     "previews/ep4_fix_1_stills_202611010322.jpg",
-    "previews/ep4_draft_202610312342.mp4",
-    "previews/ep3_final_202610312208.mp4"
+    "previews/ep4_draft_202610312342.mp4"
   ],
   "video": {
-    "src": "previews/ep4_draft_202611010350.mp4",
+    "src": "previews/ep4_final_202611010829.mp4",
     "kind": "video",
-    "label": "Ep4 draft"
+    "label": "Ep4 final"
   }
 }
