@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T06:51:48Z",
+  "updated": "2026-11-01T06:57:12Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
@@ -8,15 +8,16 @@
   "eta": "3 h",
   "links": [
     {
-      "label": "video",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/ep04_brakes.mp4"
-    },
-    {
-      "label": "contact sheet",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/contact_sheet.png"
+      "label": "parts",
+      "url": "https://github.com/Latesandwich/channel-character/tree/ep04_brakes-final-part1/parts"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T06:57:12Z",
+      "who": "worker",
+      "text": "ep04_brakes final part 1/4 done (361 frames at 16 samples, 2 pieces). Waiting on parts 2-4."
+    },
     {
       "t": "2026-11-01T06:51:48Z",
       "who": "worker",
@@ -161,11 +162,6 @@
       "t": "2026-10-29T03:39:01Z",
       "who": "Claude (PC)",
       "text": "Ep1 posted on TikTok, YouTube and Facebook; opening next episode"
-    },
-    {
-      "t": "2026-10-28T08:05:48Z",
-      "who": "conductor",
-      "text": "final ready: APPROVE to post"
     }
   ],
   "previews": [
