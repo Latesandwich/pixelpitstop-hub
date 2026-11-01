@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-01T08:29:29Z",
+  "updated": "2026-11-01T14:59:15Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
-  "stage": "final",
-  "stage_state": "waiting_for_you",
+  "stage": "approved for posting",
+  "stage_state": "done",
   "eta": "1 h",
   "links": [
     {
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T14:59:15Z",
+      "who": "conductor",
+      "text": "approved. Ask Claude on your PC to post it."
+    },
     {
       "t": "2026-11-01T08:29:29Z",
       "who": "worker",
@@ -157,11 +162,6 @@
       "t": "2026-10-29T17:27:01Z",
       "who": "worker",
       "text": "part 3/4 done (part 1/4 done earlier); parts 2 and 4 still rendering"
-    },
-    {
-      "t": "2026-10-29T17:05:10Z",
-      "who": "worker",
-      "text": "ep02_everyone final part 1/4 done (parts on branch ep02_everyone-final-part1); waiting on parts 2-4"
     }
   ],
   "previews": [
@@ -170,9 +170,5 @@
     "previews/ep4_fix_1_stills_202611010322.jpg",
     "previews/ep4_draft_202610312342.mp4"
   ],
-  "video": {
-    "src": "previews/ep4_final_202611010829.mp4",
-    "kind": "video",
-    "label": "Ep4 final"
-  }
+  "video": null
 }
