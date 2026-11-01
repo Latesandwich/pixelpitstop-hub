@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-01T03:50:12Z",
+  "updated": "2026-11-01T05:12:03Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
-  "stage": "draft",
-  "stage_state": "waiting_for_you",
-  "eta": "~2 h",
+  "stage": "final render (4 parts)",
+  "stage_state": "running",
+  "eta": "3 h",
   "links": [
     {
       "label": "video",
@@ -17,6 +17,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T05:12:03Z",
+      "who": "conductor",
+      "text": "approved draft; opening 4 final-part jobs"
+    },
     {
       "t": "2026-11-01T03:50:12Z",
       "who": "worker",
@@ -161,11 +166,6 @@
       "t": "2026-10-28T07:58:12Z",
       "who": "conductor",
       "text": "all 4 final parts done; assembling final"
-    },
-    {
-      "t": "2026-10-28T07:32:46Z",
-      "who": "worker",
-      "text": "ep01_invention final part 2/4 done (parts 1, 2, 4 in; waiting on part 3)"
     }
   ],
   "previews": [
