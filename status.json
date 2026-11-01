@@ -1,18 +1,27 @@
 {
-  "updated": "2026-11-01T03:29:00Z",
+  "updated": "2026-11-01T03:50:12Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
-  "stage": "draft (rerender after fix 1)",
-  "stage_state": "running",
+  "stage": "draft",
+  "stage_state": "waiting_for_you",
   "eta": "~2 h",
   "links": [
     {
-      "label": "sheet",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/fix1/sheet.png"
+      "label": "video",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/ep04_brakes.mp4"
+    },
+    {
+      "label": "contact sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-draft/video/ep04_brakes/contact_sheet.png"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T03:50:12Z",
+      "who": "worker",
+      "text": "Fix 1 applied to shots 16, 18, 19 (re-rendered, spliced into draft 1, audio rebuilt). Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-11-01T03:29:00Z",
       "who": "conductor",
@@ -157,22 +166,17 @@
       "t": "2026-10-28T07:32:46Z",
       "who": "worker",
       "text": "ep01_invention final part 2/4 done (parts 1, 2, 4 in; waiting on part 3)"
-    },
-    {
-      "t": "2026-10-28T07:00:29Z",
-      "who": "worker",
-      "text": "ep01_invention final part 1/4 done (branch ep01_invention-final-part1)"
     }
   ],
   "previews": [
+    "previews/ep4_draft_202611010350.mp4",
     "previews/ep4_fix_1_stills_202611010322.jpg",
     "previews/ep4_draft_202610312342.mp4",
-    "previews/ep3_final_202610312208.mp4",
-    "previews/ep3_draft_202610310838.mp4"
+    "previews/ep3_final_202610312208.mp4"
   ],
   "video": {
-    "src": "previews/ep4_fix_1_stills_202611010322.jpg",
-    "kind": "image",
-    "label": "Ep4 fix 1 stills"
+    "src": "previews/ep4_draft_202611010350.mp4",
+    "kind": "video",
+    "label": "Ep4 draft"
   }
 }
