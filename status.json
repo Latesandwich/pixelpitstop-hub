@@ -1,18 +1,31 @@
 {
-  "updated": "2026-11-01T15:30:46Z",
+  "updated": "2026-11-01T17:20:45Z",
   "paused": false,
   "episode": "gears",
   "title": "Ep5 How gears work",
   "stage": "draft",
-  "stage_state": "running",
+  "stage_state": "waiting_for_you",
   "eta": "about 3 h",
   "links": [
     {
-      "label": "final mp4",
-      "url": "https://github.com/Latesandwich/channel-character/blob/ep04_brakes-final/video/ep04_brakes/ep04_brakes.mp4"
+      "label": "video",
+      "url": "https://github.com/Latesandwich/channel-character/blob/gears-draft/video/gears/gears.mp4"
+    },
+    {
+      "label": "contact sheet",
+      "url": "https://github.com/Latesandwich/channel-character/blob/gears-draft/video/gears/contact_sheet.png"
+    },
+    {
+      "label": "notes",
+      "url": "https://github.com/Latesandwich/channel-character/blob/gears-draft/video/gears/DRAFT_NOTES.md"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T17:20:45Z",
+      "who": "worker",
+      "text": "gears draft done (51.7 s, 17 shots). Unsure: labels overlap gears, audio not listened to. Watch it, then APPROVE or FEEDBACK"
+    },
     {
       "t": "2026-11-01T15:30:46Z",
       "who": "conductor",
@@ -157,18 +170,17 @@
       "t": "2026-10-29T19:10:39Z",
       "who": "worker",
       "text": "final part 4/4 done; all 4 parts rendered, assembling"
-    },
-    {
-      "t": "2026-10-29T18:20:41Z",
-      "who": "worker",
-      "text": "final part 2/4 done (3 of 4 parts rendered; part 4 still running)"
     }
   ],
   "previews": [
+    "previews/ep5_draft_202611011720.mp4",
     "previews/ep4_final_202611010829.mp4",
     "previews/ep4_draft_202611010350.mp4",
-    "previews/ep4_fix_1_stills_202611010322.jpg",
-    "previews/ep4_draft_202610312342.mp4"
+    "previews/ep4_fix_1_stills_202611010322.jpg"
   ],
-  "video": null
+  "video": {
+    "src": "previews/ep5_draft_202611011720.mp4",
+    "kind": "video",
+    "label": "Ep5 draft"
+  }
 }
