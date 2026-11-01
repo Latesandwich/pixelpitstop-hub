@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T06:57:12Z",
+  "updated": "2026-11-01T08:05:26Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T08:05:26Z",
+      "who": "worker",
+      "text": "ep04_brakes final part 4/4 done (parts 1, 3, 4 in; waiting on part 2)"
+    },
     {
       "t": "2026-11-01T06:57:12Z",
       "who": "worker",
@@ -157,11 +162,6 @@
       "t": "2026-10-29T03:39:58Z",
       "who": "conductor",
       "text": "started draft of Ep2"
-    },
-    {
-      "t": "2026-10-29T03:39:01Z",
-      "who": "Claude (PC)",
-      "text": "Ep1 posted on TikTok, YouTube and Facebook; opening next episode"
     }
   ],
   "previews": [
