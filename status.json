@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-31T23:42:21Z",
+  "updated": "2026-11-01T03:12:16Z",
   "paused": false,
   "episode": "ep04_brakes",
-  "title": "Ep4 How brakes stop a car",
-  "stage": "draft",
-  "stage_state": "waiting_for_you",
-  "eta": "about 3 h",
+  "title": "Ep4: How brakes stop a car",
+  "stage": "fix round 1",
+  "stage_state": "running",
+  "eta": "~1 h",
   "links": [
     {
       "label": "video",
@@ -21,6 +21,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T03:12:16Z",
+      "who": "conductor",
+      "text": "feedback received, fix job opened (disc spin, her reaction beats)"
+    },
     {
       "t": "2026-10-31T23:42:21Z",
       "who": "worker",
@@ -165,11 +170,6 @@
       "t": "2026-10-28T04:02:44Z",
       "who": "orchestrator",
       "text": "Ep1 draft 1 sound fixed: fuzzy noise whooshes and slides replaced with soft tonal ones, picture unchanged. Watch it, then APPROVE or FEEDBACK"
-    },
-    {
-      "t": "2026-10-28T03:48:12Z",
-      "who": "worker",
-      "text": "Ep1 draft 1 ready (54 s). Watch it, then APPROVE or FEEDBACK"
     }
   ],
   "previews": [
