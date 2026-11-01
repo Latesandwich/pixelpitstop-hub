@@ -1,18 +1,23 @@
 {
-  "updated": "2026-11-01T08:18:58Z",
+  "updated": "2026-11-01T08:21:55Z",
   "paused": false,
   "episode": "ep04_brakes",
   "title": "Ep4 How brakes stop a car",
-  "stage": "final assemble",
-  "stage_state": "running",
+  "stage": "final",
+  "stage_state": "failed",
   "eta": "1 h",
   "links": [
     {
-      "label": "parts",
-      "url": "https://github.com/Latesandwich/channel-character/tree/ep04_brakes-final-part1/parts"
+      "label": "part4 branch",
+      "url": "https://github.com/Latesandwich/channel-character/tree/ep04_brakes-final-part4"
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T08:21:55Z",
+      "who": "worker",
+      "text": "final assemble failed. Part 4 render is truncated (frames 1118-1253 missing). Needs a re-render of part 4, waiting for your call."
+    },
     {
       "t": "2026-11-01T08:18:58Z",
       "who": "conductor",
@@ -157,11 +162,6 @@
       "t": "2026-10-29T15:10:43Z",
       "who": "conductor",
       "text": "approved draft; 4 final-part jobs opened"
-    },
-    {
-      "t": "2026-10-29T05:33:08Z",
-      "who": "worker",
-      "text": "Ep2 draft 1 ready (46.6 s, 17 shots). watch it, then APPROVE or FEEDBACK"
     }
   ],
   "previews": [
