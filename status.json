@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-01T03:26:06Z",
+  "updated": "2026-11-01T03:29:00Z",
   "paused": false,
   "episode": "ep04_brakes",
-  "title": "How brakes stop a car",
-  "stage": "rerender (fix 1 approved)",
+  "title": "Ep4 How brakes stop a car",
+  "stage": "draft (rerender after fix 1)",
   "stage_state": "running",
   "eta": "~2 h",
   "links": [
@@ -13,6 +13,11 @@
     }
   ],
   "log": [
+    {
+      "t": "2026-11-01T03:29:00Z",
+      "who": "conductor",
+      "text": "fix 1 approved, rerendering shots 16, 18, 19"
+    },
     {
       "t": "2026-11-01T03:26:06Z",
       "who": "conductor",
@@ -157,11 +162,6 @@
       "t": "2026-10-28T07:00:29Z",
       "who": "worker",
       "text": "ep01_invention final part 1/4 done (branch ep01_invention-final-part1)"
-    },
-    {
-      "t": "2026-10-28T06:15:21Z",
-      "who": "worker",
-      "text": "ep01_invention final part 4/4 done (frames 1223..1629); waiting on parts 1-3"
     }
   ],
   "previews": [
